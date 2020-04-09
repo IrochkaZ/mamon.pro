@@ -18,6 +18,11 @@ header{
   box-sizing: border-box;
   font-weight: 700;
 }
+.footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#F7F7F7;
+}
 .wrap{
   width:100%;
   max-width: 1180px;
@@ -124,12 +129,12 @@ header{
   font-size: 14px;
   color: #B2B2B2;
   line-height: 1.5;
-  grid-row-gap: 40px;
 }
 .clients{
   display: grid;
   grid-template:repeat(2, 1fr) / repeat(4, 25%);
   text-align: center;
+  grid-row-gap: 40px;
 }
 .team{
   display: grid;
@@ -146,4 +151,22 @@ header{
 }
 .team-item>div{
   flex-basis: calc(100% - 100px);
+}
+.box-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+.social>li{
+  margin-left: 15px;
+}
+.social>li>a{
+  text-decoration: none;
+  color: #B2B2B2;
+  font-size: 24px;
 }
